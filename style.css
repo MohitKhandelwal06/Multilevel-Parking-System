@@ -1,0 +1,23 @@
+.container-1{
+    background-color:darkslateblue;
+    color:white;
+    padding: 5rem;
+}
+
+.carousel{
+    background-color: beige;
+    padding:1rem 5rem;
+}
+
+.about-project{
+    background-color:darkslateblue;
+    color:white;
+    padding:1rem 5rem;
+}
+.pricing-section{
+    padding: 2rem 5rem;
+    background-color: beige;
+}
+.nav{
+    color:white;
+}
