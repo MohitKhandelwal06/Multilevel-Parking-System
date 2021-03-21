@@ -1,0 +1,26 @@
+.container-1{
+    background-color:darkslateblue;
+    color:white;
+    padding: 3rem 5rem 2rem;
+}
+
+.login-form{
+    background-color:beige;
+    border: 1px solid;
+    padding: 3rem;
+}
+
+.background-login{
+    background-color:beige;
+    padding: 3rem 5rem;
+}
+.footer{
+    background-color:darkslateblue;
+    color:white;
+    text-align:center;
+    padding:1rem;
+}
+
+.footer-icon{
+    margin:15px;
+}
