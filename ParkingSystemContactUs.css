@@ -1,0 +1,30 @@
+label{
+  font-weight: bold;
+  font-family: 'Headland One', serif;
+  font-size: 15px;
+}
+h3,h1{
+    font-family: 'Brawler', serif;
+    padding: 10px 0;
+}
+
+.form1{
+  padding: 4rem 8rem;
+
+    background: beige;
+}
+.form-control{
+  background: beige;
+  margin: 10px;
+}
+.custom-select{
+  margin: 20px;
+  height: 40px;
+  border: 1px solid #ced4da;
+}
+.btn{
+  padding: 2rem;
+  margin: 10px;
+
+
+}
