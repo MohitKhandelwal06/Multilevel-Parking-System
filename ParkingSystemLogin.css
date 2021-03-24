@@ -1,15 +1,17 @@
-
+/*--------------------Header Section-----------------*/
 h1{
 
-font-family: 'Merriweather', serif;
-}
-
-
-.container-1{
-    background-color:darkslateblue;
-    color:white;
-    padding: 3rem 5rem 2rem;
-}
+    font-family: 'Brawler', serif;
+    padding: 3rem 5rem 0rem;
+    }
+    .navbar{
+      padding: 3rem 5rem;
+    }
+    
+    .container-1{
+        background-color:darkslateblue;
+        color:white;
+    }
 
 .login-form{
     background-color:beige;
