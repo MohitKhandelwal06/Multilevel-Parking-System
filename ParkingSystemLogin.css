@@ -12,17 +12,39 @@ h1{
         background-color:darkslateblue;
         color:white;
     }
-
-.login-form{
+/*------------------------------------------------------------*/
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  }
+  /* .form-background-back{
+      background-color: beige;
+  } */
+  .form-background{
     background-color:beige;
-    border: 1px solid;
-    padding: 3rem;
 }
-
-.background-login{
-    background-color:beige;
-    padding: 3rem 5rem;
-}
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+  } 
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+/*----------------Footer------------------------------------------*/
 .footer{
     background-color:darkslateblue;
     color:white;
@@ -48,5 +70,5 @@ h1{
 }
 
 .logo{
-  height: 6rem;
+  height: 5rem;
 }
