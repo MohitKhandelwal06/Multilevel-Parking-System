@@ -6,7 +6,7 @@
     .navbar{
       padding: 3rem 5rem;
     }
-    
+
     .container-1{
         background-color:darkslateblue;
         color:white;
@@ -23,13 +23,13 @@
     .nav{
         color:white;
     }
-    
+
     .nav-item{
       margin: 0.5rem;
       font-size: 1.2rem;
       font-family: 'Lora', serif;
     }
-    
+
     .logo{
       height: 5rem;
     }
@@ -40,40 +40,90 @@
         text-align:center;
         padding:1rem;
     }
-    
+
     .footer-icon{
         margin:15px;
     }
     /*============================================member's section======================================================*/
     .member-1{
       background-color:beige;
-      border:5px solid ;
       margin: 35px;
-    }
+    position: relative;
+    animation-duration: 2s;
+    animation-name: slidein;
+    border-radius:2%;
+
+
+
+}
+
     .member-2{
       background-color:beige;
-      border:5px solid ;
       margin: 35px;
+      position: relative;
+      animation-duration: 2s;
+      animation-name:slideout;
+      border-radius:2%;
+
     }
     .member-3{
       background-color:beige;
-      border:5px solid ;
       margin: 35px;
+      position: relative;
+      animation-duration: 2s;
+      animation-name: slidein;
+      animation-delay: 1s;
+       border-radius:2%;
+
+
     }
     .member-4{
       background-color:beige;
-      border:5px solid ;
       margin: 35px;
+      position: relative;
+      animation-duration: 2s;
+      animation-name:slideout;
+      animation-delay: 1s;
+      border-radius:3%;
+
     }
+
+       @keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 100%;
+      }
+
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+
+    @keyframes slideout {
+    from {
+     margin-left: -100%;
+     width: 100%;
+    }
+
+    to {
+     margin-left: 0;
+     width: 100%;
+    }
+    }
+
+
+
     .member-1 >img{
       float:left;
       width: 10%;
       padding:1%;
     }
     .member-2 >img{
-      float:right;
+      float:left;
       width: 10%;
       padding:1%;
+
     }
     .member-3 >img{
       float:left;
@@ -81,12 +131,22 @@
       padding:1%;
     }
     .member-4 >img{
-      float:right;
+      float:left;
       width: 10%;
       padding:1%;
     }
     h3{
-      padding: 20px;
+      padding:  1% ;
+
+      font-family: 'Brawler', serif;
+    }
+    .about{
+      font-family: 'Lora', serif;
+      padding:  1% 1%;
+      line-height:1.7;
     }
 
-
+   .contact-details{
+     font-family: 'Lora', serif;
+     padding:  0.5% 1%;
+   }

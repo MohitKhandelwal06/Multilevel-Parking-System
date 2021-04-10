@@ -2,12 +2,12 @@
 header>h1{
 
   font-family: 'Brawler', serif;
-  padding: 3rem 5rem 0rem;
+  padding: 3rem 5rem 0;
   }
   .navbar{
     padding: 3rem 5rem;
   }
-  
+
   .container-1{
       background-color:darkslateblue;
       color:white;
@@ -24,12 +24,12 @@ header>h1{
   .carousel-control-next {
     margin: 20px;
   }
-  
+
   .carousel-control-prev {
     margin: 20px;
   }
   /*--------------------------------------------About-Project----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  
+
   .about-project{
       background-color:darkslateblue;
       color:white;
@@ -39,7 +39,7 @@ header>h1{
   .about-project-info{
   font-family: 'Lora', serif;
   }
-  
+
   .heading-project{
       margin-bottom: 20px;
   }
@@ -60,15 +60,18 @@ header>h1{
   .nav{
       color:white;
   }
-  
+
   .nav-item{
     margin: 0.5rem;
     font-size: 1.2rem;
     font-family: 'Lora', serif;
   }
-  
+
   .logo{
     height: 5rem;
+  }
+  .container-fluid{
+    margin-bottom: 25px;
   }
   /*-----------------------------------------Footer----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
   .footer{
@@ -76,15 +79,12 @@ header>h1{
       color:white;
       text-align:center;
       padding:1rem;
-  }
   
+  }
+
   .footer-icon{
       margin:15px;
   }
-  
-
-
-
 
 
 label{
@@ -92,28 +92,11 @@ label{
   font-family: 'Headland One', serif;
   font-size: 15px;
 }
-h3,h1{
-    font-family: 'Brawler', serif;
-    padding: 10px 0;
-}
 
-.form1{
-  padding: 4rem 8rem;
 
-    background: beige;
-}
-.form-control{
-  background: beige;
-  margin: 10px;
-}
-.custom-select{
-  margin: 20px;
-  height: 40px;
-  border: 1px solid #ced4da;
-}
-.btn{
-  padding: 2rem;
-  margin: 10px;
-
+.form-part1{
+  justify-content: center;
+  padding:2%;
+  background-color: beige;
 
 }
