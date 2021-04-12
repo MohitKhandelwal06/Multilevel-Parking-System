@@ -12,50 +12,14 @@ h1{
         background-color:darkslateblue;
         color:white;
     }
-    /*-------------------------------------------Carousel-Section--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    .carousel{
-        background-color: beige;
-        padding:1rem 5rem;
-    }
-    .carousel-item>img{
-      width:640px;
-      height:600px;
-    }
-    .carousel-control-next {
-      margin: 20px;
-    }
-    
-    .carousel-control-prev {
-      margin: 20px;
-    }
     /*--------------------------------------------About-Project----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    
-    .about-project{
-        background-color:darkslateblue;
-        color:white;
-        padding:3rem 5rem;
-        font-family: 'Brawler', serif;
-    }
-    .about-project-info{
+    p{
     font-family: 'Lora', serif;
+    line-height: 1.7;
     }
-    
-    .heading-project{
-        margin-bottom: 20px;
-    }
-    /*------------------------------------------Pricing-Section--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    .pricing-section{
-        padding: 3rem 5rem;
-        background-color: beige;
-    }
-    .card-header{
-      font-family: 'Headland One', serif;
-      font-weight: bold;
-    }
-    .card-text{
-    font-family: 'Enriqueta', serif;
-      margin-top:20px;
-    }
+  h3{
+    font-family: 'Brawler', serif;
+  }
     /*--------------------------------------------Nav-Bar-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
     .nav{
         color:white;
@@ -81,4 +45,10 @@ h1{
     .footer-icon{
         margin:15px;
     }
-    
+    .purple{
+      background-color:darkslateblue;
+      color:white;
+    }
+    .beige{
+      background-color:beige;
+    }
