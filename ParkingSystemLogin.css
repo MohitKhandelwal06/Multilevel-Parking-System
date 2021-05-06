@@ -2,16 +2,17 @@
 h1{
 
     font-family: 'Brawler', serif;
-    padding: 3rem 5rem 0rem;
+    padding: 1.5rem 5rem 0rem;
     }
     .navbar{
       padding: 3rem 5rem;
     }
-    
+
     .container-1{
         background-color:darkslateblue;
         color:white;
     }
+  
 /*------------------------------------------------------------*/
   .form-signin {
     width: 100%;
@@ -28,17 +29,17 @@ h1{
   .form-signin .checkbox {
     font-weight: 400;
   }
-  
+
 .form-signin .form-floating:focus-within {
     z-index: 2;
-  } 
-  
+  }
+
   .form-signin input[type="email"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
-  
+
   .form-signin input[type="password"] {
     margin-bottom: 10px;
     border-top-left-radius: 0;

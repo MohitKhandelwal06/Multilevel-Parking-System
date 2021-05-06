@@ -2,7 +2,8 @@
 header>h1{
 
   font-family: 'Brawler', serif;
-  padding: 3rem 5rem 0;
+  padding: 1.5rem 5rem 0;
+
   }
   .navbar{
     padding: 3rem 5rem;
@@ -12,6 +13,12 @@ header>h1{
       background-color:darkslateblue;
       color:white;
   }
+  .fixed-top{
+    background-color:darkslateblue;
+    color:white;
+
+  }
+
   /*-------------------------------------------Carousel-Section--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
   .carousel{
       background-color: beige;
@@ -79,14 +86,14 @@ header>h1{
       color:white;
       text-align:center;
       padding:1rem;
-  
+
   }
 
   .footer-icon{
       margin:15px;
   }
 
-
+/*-------------------------------------------------------------------Form-Part------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 label{
   font-weight: bold;
   font-family: 'Headland One', serif;
@@ -99,4 +106,9 @@ label{
   padding:2%;
   background-color: beige;
 
+}
+.contact-txt{
+  margin: 0.5rem;
+  font-size: 18px;
+  font-family: 'Lora', serif;
 }
