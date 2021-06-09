@@ -123,7 +123,7 @@ app.get("/api/users/home2",(req,res) =>
   });
   
 
-  app.listen(process.env.APP_PORT, () =>
+  app.listen(process.env.PORT, () =>
 {
     console.log(`listening port no ${process.env.APP_PORT}`);
 });
