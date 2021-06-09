@@ -40,7 +40,7 @@ app.get("/api",(req,res) =>
 
 app.get("/",(req,res)=>
 {
-res.render(__dirname+"ParkingSystemHome");
+res.sendFile(__dirname+"ParkingSystemHome");
 });
 app.get("/ParkingSystemHome",(req,res)=>
 {
