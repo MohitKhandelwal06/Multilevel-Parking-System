@@ -90,7 +90,7 @@ app.get("/api/users/home2",(req,res) =>
 {
 
 
-  axios.get('http://localhost:2000/api/users/available').then(resp =>{
+  axios.get('https://arcane-beyond-69154.herokuapp.com/api/users/available').then(resp =>{
     ans= resp.data;
     console.log(ans.data)  
     

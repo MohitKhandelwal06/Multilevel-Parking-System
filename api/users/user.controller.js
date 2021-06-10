@@ -14,11 +14,11 @@ getUserByUserEmail(body.email,(err,result) => {
     if(err)
     {
         err_msg="invalid email or password";
-        console.log("nishi"+err);
+        console.log("Error:"+err);
         res.render("ParkingSystemLogin",{err_msg:err_msg})
 }
 if(result==null) {
-    console.log("mohit");
+    console.log("Error:");
     err_msg= "invalid email or password";
     res.render("ParkingSystemLogin", { err_msg: err_msg });
 
@@ -52,7 +52,7 @@ else if(body.password === result.password ){
     //     message:"login successfully",
     //     token: jsontoken
     // });
-    axios.get('http://localhost:2000/api/users/available').then(resp =>{
+    axios.get('https://arcane-beyond-69154.herokuapp.com/api/users/available').then(resp =>{
         ans= resp.data;
         console.log(ans.data)  
         
@@ -97,7 +97,7 @@ checkin:(req,res)=> {
         //     success: 1,
         //     data: result
         // });
-        axios.get('http://localhost:2000/api/users/available').then(resp =>{
+        axios.get('https://arcane-beyond-69154.herokuapp.com/api/users/available').then(resp =>{
         ans= resp.data;
         console.log(ans.data)  
       //var alert=window("YOUR TOKEN IS" + result1);
@@ -134,7 +134,7 @@ checkout:(req,res) => {
         //     success: 1,
         //     data: result
         // });
-        axios.get('http://localhost:2000/api/users/available').then(resp =>{
+        axios.get('https://arcane-beyond-69154.herokuapp.com/api/users/available').then(resp =>{
             ans= resp.data;
             console.log(ans.data)  
             console.log("charges"+result2);
