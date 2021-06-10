@@ -86,10 +86,13 @@ checkin:(req,res)=> {
             console.log(error);
             return;
         }
+        console.log(result1);
         if(!result1) {
+
             return res.json({
                 success: 0,
-                message: result1
+                message: "record not found"
+                
 
             });
         }
