@@ -89,7 +89,8 @@ checkin:(req,res)=> {
         if(!result1) {
             return res.json({
                 success: 0,
-                message: "record not found"
+                message: result1
+
             });
         }
       //  res.render("home2",{result:result});
