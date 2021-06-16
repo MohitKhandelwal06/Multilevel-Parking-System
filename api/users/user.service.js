@@ -277,7 +277,7 @@ console.log(inid);
                                             return callback(error);
                                         }
                                         console.log("result5 "+result5[0].charges);
-                                        return callback(null, result5[0].charges);
+                                        return callback(null, result5[0]);
   
                                     });
                             });

@@ -142,7 +142,7 @@ checkout:(req,res) => {
             ans= resp.data;
             console.log(ans.data)  
             console.log("charges"+result2);
-                    res.render("checkout",{result:ans.data,result1:"",result2:result2})
+                    res.render("checkout",{result:ans.data,result1:"",result2:result2.charges})
           //  console.log(ans);
         });
     //    res.render("checkout",{result:result});
