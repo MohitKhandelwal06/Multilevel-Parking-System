@@ -141,7 +141,8 @@ console.log(inid);
         var odate;
      odate =new Date().toLocaleDateString(); 
 
-        pool.query(
+        let promise=new Promise( function(resolve,reject){
+            pool.query(
             `update checkin set timeout=now(),outdate="${odate}" where token=?`,
 
             [
@@ -156,7 +157,6 @@ console.log(inid);
                // return result;
             
 
-
         pool.query(
 
             `select slotid,vehicleid,timein,timeout,Indate,outdate from checkin where token=?`,
@@ -168,7 +168,6 @@ console.log(inid);
                 if (error) {
                     return callback(error);
                 }
-
 
                 sid = result1[0].slotid;
                 vid = result1[0].vehicleid;
@@ -196,7 +195,6 @@ console.log(inid);
                             return callback(error);
                         }
   
-
 
 
 
@@ -259,7 +257,10 @@ console.log(inid);
                                     (error, result4, fields) => {
 
                                         if (error) {
-                                            return callback(error);
+                                            reject(error);
+                                        }
+                                        else{
+                                            resolve(result4);
                                         }
                                       // return callback(null, data.charges);
                                        
@@ -267,33 +268,39 @@ console.log(inid);
                                     });
                                 //    pool.query(
                                 //        `select charges from payment where token = `
+                           
                                 //    ) 
-                                pool.query(
-                                    `select charges from payment where token =${token}`,
-                                    (error, result5, fields) => {
-        
-                                        if (error) 
-                                        {
-                                            return callback(error);
-                                        }
-                                        console.log("result5 "+result5[0].charges);
-                                        return callback(null, result5[0]);
-  
-                                    });
+                                
                             });
-
 
                     });
 
                 
             });
 
-
         });
+    }).then(function(result){
+        pool.query(
+            `select charges from payment where token =${token}`,
+            (error, result5, fields) => {
 
+                if (error) 
+                {
+                    return callback(error);
+                }
+                console.log("result5 "+result5[0]);
+                console.log("result5 charges"+result5[0].charges);
+                return callback(null, result5[0]);
 
+})
+            },function(err){
+                console.log(err)
+            
+    })
+        
 
     },
+
     create3:(data,callback) =>
     {
         pool.query(
